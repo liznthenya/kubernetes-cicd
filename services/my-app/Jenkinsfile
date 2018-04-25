@@ -45,7 +45,7 @@ node {
     stage("Verify UAT") {
         dir('services/my-app/kubernetes') {
             def namespace = "uat"
-            def service = "my-app"
+            def service = "my-app-service"
             def serviceIP = "";       
 
             echo "Waiting for Service to get an IP"
